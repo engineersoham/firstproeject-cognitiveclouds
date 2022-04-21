@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`get snapshot for nav 1`] = `
+exports[`app snap 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>

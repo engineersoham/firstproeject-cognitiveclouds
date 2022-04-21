@@ -10,9 +10,9 @@ import { Typography } from '@mui/material';
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
-    backgroundColor: alpha(theme.palette.common.white , 0.15),
+    backgroundColor: alpha(theme.palette.common.white, 0.15),
     '&:hover': {
-        backgroundColor: alpha(theme.palette.common.white, 0.50),
+        backgroundColor: alpha(theme.palette.common.white, 0.25),
     },
     marginLeft: 0,
     width: '100%',
@@ -59,7 +59,7 @@ const Nav = () => {
                             component="div"
                             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                         >
-                            WEATHERSTACK
+                            WEATHER REPORT
                         </Typography>
 
                         <Search>
@@ -70,10 +70,10 @@ const Nav = () => {
                                     name='name'
                                     onChange={handelChange}
                                     value={input.name}
-                                    placeholder="country name"
+                                    placeholder="enter country name"
                                     style={{ height: '2rem', margin: '10px' }}
                                 />
-                                <button type='submit' style={{height:'2.4rem', marginTop: '5px' }}>Search</button>
+                                <button disabled={!input.name} type='submit' style={{height:'2.4rem', marginTop: '5px' }}>Search</button>
                             </form>
                         </Search>
 

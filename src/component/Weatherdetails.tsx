@@ -20,7 +20,7 @@ const Weatherdetails = () => {
     )
 
     const getweather = (capital: string) => {
-        fetch(`http://api.weatherstack.com/current?access_key=180122a6a063faad95115cfa647b1af3&query=${capital}`)
+        fetch(`http://api.weatherstack.com/current?access_key=d81381e7f65ac20a3115570356e0a315&query=${capital}`)
             .then(res => res.json())
             .then((data) => {
                 setweather(
@@ -33,7 +33,7 @@ const Weatherdetails = () => {
                         precip: data?.current.precip
                     }
                 )
-                console.log(data)
+                
             })
     }
 
@@ -41,13 +41,12 @@ const Weatherdetails = () => {
         if (capital) {
             getweather(capital)
         }
-        console.log(capital);
 
     }, [capital])
 
     return (
         <div>
-            <h3 style={{ textAlign: 'center', marginBottom: '50px' }}> Current Weather Condition of {weatherdata.capital}</h3>
+            <h3 style={{ textAlign: 'center', marginBottom: '50px' }}> Current Weather Report of {weatherdata.capital}</h3>
 
 
             <Card style={{ boxShadow: '5px 10px #888888' }} variant='outlined' sx={{ display: 'flex', ml: 70, mr: 70 }}>
