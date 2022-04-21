@@ -1,21 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { Route, Routes } from 'react-router-dom';
-import Nav from './component/Nav';
-import Countrydetails from './component/Countrydetails';
-import Weatherdetails from './component/Weatherdetails';
+import React from 'react'
+import { Route, Routes, useNavigate } from 'react-router-dom'
+import Country from './component/Country'
+import Nav from './component/Nav'
+import Weather from './component/Weather'
 
-function App() {
+const App = () => {
+  const navigate = useNavigate()
+
   return (
-    <>
-    <Nav/>
-    <Routes>
-      <Route path='/country/:country' element={<Countrydetails/>}/>
-      <Route path='/weather/:capital' element={<Weatherdetails/>}/>
-    </Routes>
-    </>
-  );
+    <div>
+      <Nav navigate={navigate}/>
+      <Routes>
+        <Route path='/country/:country' element={<Country/>}/>
+        <Route path='/weather/:capital' element={<Weather/>}/>
+      </Routes>
+    </div>
+  )
 }
 
-export default App;
+export default App

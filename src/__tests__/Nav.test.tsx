@@ -1,26 +1,31 @@
-import {getByRole, render, screen} from '@testing-library/react';
-import { BrowserRouter } from 'react-router-dom';
-import Nav from '../component/Nav';
-import React from 'react'
+import { screen,render, fireEvent } from "@testing-library/react";
+import { BrowserRouter } from "react-router-dom";
+import App from "../App";
+import Nav from "../component/Nav";
 
-test('get snapshot for nav', ()=>{
-    const shot = render(
+it('app snap nav',()=>{
+    const tree = render(
         <BrowserRouter>
-        <Nav/>
+        <Nav navigate={()=>{}}/>
         </BrowserRouter>
-    );
-    expect(shot).toMatchSnapshot()
+    )
+    expect(tree).toMatchSnapshot()
+    const input = screen.getByRole("textbox");
+	fireEvent.change(input, { target: { value: "test" } });
+	const submitButton = screen.getByRole("button");
+		fireEvent.click(submitButton);
 })
 
-test('test for nav button', () => {
+it('app snap nav func',()=>{
+    const mock = jest.fn()
     render(
         <BrowserRouter>
-        <Nav/>
+        <Nav navigate={mock}/>
         </BrowserRouter>
-    );
-    const btn = screen.getByRole('button');
-    const inputs = screen.getByRole('textbox');
-
-    expect(btn).toBeInTheDocument();
-    expect(inputs).toBeInTheDocument()
+    )
+    fireEvent.click(screen.getByRole('button'))
+    expect(mock).toMatchSnapshot()
+    expect(screen.getByRole('button')).toBeInTheDocument()
+    screen.debug()
+    expect(screen.getByRole('button')).toBeDisabled()
 })
