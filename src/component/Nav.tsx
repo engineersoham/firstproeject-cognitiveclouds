@@ -24,8 +24,8 @@ const Nav:React.FC<Props> = ({...props}) => {
             <Toolbar>
                 <Typography variant='h5' sx={{flexGrow:1}}>Weather Report</Typography>
                 <form action="" onSubmit={handelSubmit}>
-                    <TextField type='text' placeholder='enter country  name' onChange={handelChange}/>
-                    <Button sx={{height:'3.4rem', color:'white'}} variant='contained' disabled={!input} type='submit'>Search</Button>
+                    <TextField style = {{background: '#D3D3D3'}} type='text' placeholder='enter country  name' onChange={handelChange}/>
+                    <button  style={{height:'3.4rem', color:'white', backgroundColor: 'grey' }}  disabled={!input} type='submit'>Search</button>
                 </form>
             </Toolbar>
         </AppBar>

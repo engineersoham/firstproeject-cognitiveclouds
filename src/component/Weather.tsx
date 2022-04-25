@@ -10,7 +10,7 @@ const {capital} = useParams()
 
 const fetchData = async()=>{
     try{
-        const res = await axios(`http://api.weatherstack.com/current?access_key=180122a6a063faad95115cfa647b1af3&query=${capital}`)
+        const res = await axios(`http://api.weatherstack.com/current?access_key=fddbfc85f1c1d3dfc85ed37c7ed2a5ad&query=${capital}`)
         console.log(res);
         setData(res.data.current)
     }

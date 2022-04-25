@@ -22,6 +22,7 @@ Object {
             >
               <div
                 class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+                style="background: rgb(211, 211, 211);"
               >
                 <div
                   class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
@@ -51,9 +52,8 @@ Object {
                 </div>
               </div>
               <button
-                class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root Mui-disabled  css-21yton-MuiButtonBase-root-MuiButton-root"
                 disabled=""
-                tabindex="-1"
+                style="height: 3.4rem; color: white; background-color: grey;"
                 type="submit"
               >
                 Search
@@ -82,6 +82,7 @@ Object {
           >
             <div
               class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+              style="background: rgb(211, 211, 211);"
             >
               <div
                 class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
@@ -111,9 +112,8 @@ Object {
               </div>
             </div>
             <button
-              class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root Mui-disabled  css-21yton-MuiButtonBase-root-MuiButton-root"
               disabled=""
-              tabindex="-1"
+              style="height: 3.4rem; color: white; background-color: grey;"
               type="submit"
             >
               Search
