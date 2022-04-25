@@ -84,7 +84,7 @@ useEffect(()=>{
                 </TableCell>
             </TableRow>
         </Table>
-        <Button title="capitalweather" variant='contained' onClick={()=>navigate(`/weather/${data.capital[0]}`)}>capital Weather</Button>
+        <Button style = {{width:"100px"}} title="capitalweather" variant='contained' onClick={()=>navigate(`/weather/${data.capital[0]}`)}>capital Weather</Button>
     </div>}
     </>
   )
