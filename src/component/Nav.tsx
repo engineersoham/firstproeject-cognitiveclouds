@@ -1,4 +1,5 @@
 import { AppBar, Button, TextField, Toolbar, Typography } from '@mui/material';
+import { blue } from '@mui/material/colors';
 import React, { useState } from 'react'
 
 type Props = {
@@ -24,8 +25,8 @@ const Nav:React.FC<Props> = ({...props}) => {
             <Toolbar>
                 <Typography variant='h5' sx={{flexGrow:1}}>Weather Report</Typography>
                 <form action="" onSubmit={handelSubmit}>
-                    <TextField style = {{background: '#D3D3D3'}} type='text' placeholder='enter country  name' onChange={handelChange}/>
-                    <button  style={{height:'3.4rem', color:'white', backgroundColor: 'grey' }}  disabled={!input} type='submit'>Search</button>
+                    <TextField style = {{background: '#D3D3D3', color: 'blue'}} type='text' placeholder='enter country  name' onChange={handelChange}/>
+                    <button  style={{height:'3.5rem', color:'black', backgroundColor: 'white', marginTop: '1px' }}  disabled={!input} type='submit'>Search</button>
                 </form>
             </Toolbar>
         </AppBar>

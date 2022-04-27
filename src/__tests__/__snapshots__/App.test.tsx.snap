@@ -1,9 +1,72 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`app snap nav 1`] = `
+exports[`app snap App 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
+    <div>
+      <div>
+        <div>
+          <header
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-hip9hq-MuiPaper-root-MuiAppBar-root"
+          >
+            <div
+              class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1t29gy6-MuiToolbar-root"
+            >
+              <h5
+                class="MuiTypography-root MuiTypography-h5 css-1f8a19r-MuiTypography-root"
+              >
+                Weather Report
+              </h5>
+              <form
+                action=""
+              >
+                <div
+                  class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+                  style="background: rgb(211, 211, 211); color: blue;"
+                >
+                  <div
+                    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                  >
+                    <input
+                      aria-invalid="false"
+                      class="MuiOutlinedInput-input MuiInputBase-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                      id=":r0:"
+                      placeholder="enter country  name"
+                      type="text"
+                      value=""
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+                    >
+                      <legend
+                        class="css-hdw1oc"
+                      >
+                        <span
+                          class="notranslate"
+                        >
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+                <button
+                  disabled=""
+                  style="height: 3.5rem; color: black; background-color: white; margin-top: 1px;"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form>
+            </div>
+          </header>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
     <div>
       <div>
         <header
@@ -63,65 +126,6 @@ Object {
         </header>
       </div>
     </div>
-  </body>,
-  "container": <div>
-    <div>
-      <header
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-hip9hq-MuiPaper-root-MuiAppBar-root"
-      >
-        <div
-          class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1t29gy6-MuiToolbar-root"
-        >
-          <h5
-            class="MuiTypography-root MuiTypography-h5 css-1f8a19r-MuiTypography-root"
-          >
-            Weather Report
-          </h5>
-          <form
-            action=""
-          >
-            <div
-              class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
-              style="background: rgb(211, 211, 211); color: blue;"
-            >
-              <div
-                class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
-              >
-                <input
-                  aria-invalid="false"
-                  class="MuiOutlinedInput-input MuiInputBase-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
-                  id=":r0:"
-                  placeholder="enter country  name"
-                  type="text"
-                  value=""
-                />
-                <fieldset
-                  aria-hidden="true"
-                  class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
-                >
-                  <legend
-                    class="css-hdw1oc"
-                  >
-                    <span
-                      class="notranslate"
-                    >
-                      ​
-                    </span>
-                  </legend>
-                </fieldset>
-              </div>
-            </div>
-            <button
-              disabled=""
-              style="height: 3.5rem; color: black; background-color: white; margin-top: 1px;"
-              type="submit"
-            >
-              Search
-            </button>
-          </form>
-        </div>
-      </header>
-    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -176,5 +180,3 @@ Object {
   "unmount": [Function],
 }
 `;
-
-exports[`app snap nav func 1`] = `[MockFunction]`;

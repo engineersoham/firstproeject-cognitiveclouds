@@ -77,8 +77,9 @@ const Country = () => {
 
                         </TableCell>
                         <TableCell>
-                            <Button data-testid='capital' title="capitalweather" variant='contained' onClick={() => navigate(`/weather/${data.capital[0]}`)}>capital Weather</Button>
+                          <Button data-testid='capital'  title="capitalweather" variant='contained' onClick={() => navigate(`/weather/${data.capital[0]}`)}>capital Weather</Button>
                         </TableCell>
+                        
                     </TableRow>
                 </Table>
 
