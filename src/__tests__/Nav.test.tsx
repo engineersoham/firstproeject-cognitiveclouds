@@ -1,4 +1,4 @@
-import { screen,render, fireEvent } from "@testing-library/react";
+import { screen,render, fireEvent, getByPlaceholderText } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import App from "../App";
 import Nav from "../component/Nav";
@@ -28,4 +28,5 @@ it('app snap nav func',()=>{
     expect(screen.getByRole('button')).toBeInTheDocument()
     screen.debug()
     expect(screen.getByRole('button')).toBeDisabled()
+
 })

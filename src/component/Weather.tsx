@@ -8,6 +8,8 @@ const Weather = () => {
     const [data, setData]:any = useState<any>();
 const {capital} = useParams()
 
+const navigate = useNavigate();
+
 const fetchData = async()=>{
     try{
         const res = await axios(`http://api.weatherstack.com/current?access_key=fddbfc85f1c1d3dfc85ed37c7ed2a5ad&query=${capital}`)
@@ -27,6 +29,7 @@ useEffect(()=>{
 },[capital])
   return (
     <div>
+        <Button sx={{m:2}} variant='contained' onClick={() => navigate(-1)}>Back</Button>
         {data && 
         <Card sx={{width:'30vw',borderRadius:'10px', ml:'35vw',mt:5,boxShadow:'8px 10px black', p:2, backgroundColor:'lightyellow'}}>
             

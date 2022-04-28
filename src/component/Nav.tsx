@@ -25,8 +25,18 @@ const Nav:React.FC<Props> = ({...props}) => {
             <Toolbar>
                 <Typography variant='h5' sx={{flexGrow:1}}>Weather Report</Typography>
                 <form action="" onSubmit={handelSubmit}>
-                    <TextField style = {{background: '#D3D3D3', color: 'blue'}} type='text' placeholder='enter country  name' onChange={handelChange}/>
-                    <button  style={{height:'3.5rem', color:'black', backgroundColor: 'white', marginTop: '1px' }}  disabled={!input} type='submit'>Search</button>
+                <input
+                                    id='browsers'
+                                    type="text"
+                                    name='name'
+                                    onChange={handelChange}
+                                    value={input}
+                                    placeholder="enter country name"
+                                    onFocus={(e) => e.target.placeholder = ''}
+                                    onBlur={(e) => e.target.placeholder = 'enter country name'}
+                                    style={{ height: '2rem', margin: '10px' }}
+                                />
+                    <button  style={{height:'2.4rem', color:'black', marginTop: '5px' }}  disabled={!input}  type='submit'>Search</button>
                 </form>
             </Toolbar>
         </AppBar>

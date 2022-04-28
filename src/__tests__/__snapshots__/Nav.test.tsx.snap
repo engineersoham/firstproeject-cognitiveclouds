@@ -20,40 +20,17 @@ Object {
             <form
               action=""
             >
-              <div
-                class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
-                style="background: rgb(211, 211, 211); color: blue;"
-              >
-                <div
-                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
-                >
-                  <input
-                    aria-invalid="false"
-                    class="MuiOutlinedInput-input MuiInputBase-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id=":r0:"
-                    placeholder="enter country  name"
-                    type="text"
-                    value=""
-                  />
-                  <fieldset
-                    aria-hidden="true"
-                    class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
-                  >
-                    <legend
-                      class="css-hdw1oc"
-                    >
-                      <span
-                        class="notranslate"
-                      >
-                        ​
-                      </span>
-                    </legend>
-                  </fieldset>
-                </div>
-              </div>
+              <input
+                id="browsers"
+                name="name"
+                placeholder="enter country name"
+                style="height: 2rem; margin: 10px;"
+                type="text"
+                value=""
+              />
               <button
                 disabled=""
-                style="height: 3.5rem; color: black; background-color: white; margin-top: 1px;"
+                style="height: 2.4rem; color: black; margin-top: 5px;"
                 type="submit"
               >
                 Search
@@ -80,40 +57,17 @@ Object {
           <form
             action=""
           >
-            <div
-              class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
-              style="background: rgb(211, 211, 211); color: blue;"
-            >
-              <div
-                class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
-              >
-                <input
-                  aria-invalid="false"
-                  class="MuiOutlinedInput-input MuiInputBase-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
-                  id=":r0:"
-                  placeholder="enter country  name"
-                  type="text"
-                  value=""
-                />
-                <fieldset
-                  aria-hidden="true"
-                  class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
-                >
-                  <legend
-                    class="css-hdw1oc"
-                  >
-                    <span
-                      class="notranslate"
-                    >
-                      ​
-                    </span>
-                  </legend>
-                </fieldset>
-              </div>
-            </div>
+            <input
+              id="browsers"
+              name="name"
+              placeholder="enter country name"
+              style="height: 2rem; margin: 10px;"
+              type="text"
+              value=""
+            />
             <button
               disabled=""
-              style="height: 3.5rem; color: black; background-color: white; margin-top: 1px;"
+              style="height: 2.4rem; color: black; margin-top: 5px;"
               type="submit"
             >
               Search
