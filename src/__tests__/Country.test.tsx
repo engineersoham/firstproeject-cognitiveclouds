@@ -4,6 +4,20 @@ import App from "../App";
 import Country from "../component/Country";
 import Nav from "../component/Nav";
 
+// jest.mock("react-router-dom",()=>{
+//     return{
+//         useLocation:()=>{
+//             return{
+//                 state:'india'
+//             }
+//         },
+//         useNavigate:()=>jest.fn()
+//     }
+// })
+// jest.mock("react-router-dom", () => ({
+//     ...jest.requireActual("react-router-dom"),
+//     useParams: jest.fn(),
+//    }));
 it('app snap country',()=>{
     const tree = render(
         <BrowserRouter>
@@ -24,9 +38,10 @@ test('app snap country button',async()=>{
         </BrowserRouter>
     )
     await new Promise((r) => setTimeout(r, 5000));
-    // expect(screen.getByTitle('capitalweather')).toBeInTheDocument()
-    // expect(screen.getByRole('button')).toBeInTheDocument()
-
-    // expect(screen.getByText(/capital Weather/i)).toBeInTheDocument()
+    //const back = screen.getByTestId('back');
+    //fireEvent.click(back);
+    //const capital = screen.getByTestId('capital');
+    //fireEvent.click(capital);
+    //screen.getAllByRole('button');
 })
 })
