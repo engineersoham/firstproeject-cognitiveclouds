@@ -28,5 +28,5 @@ it('app snap nav func',()=>{
     expect(screen.getByRole('button')).toBeInTheDocument()
     screen.debug()
     expect(screen.getByRole('button')).toBeDisabled()
-
+    
 })
