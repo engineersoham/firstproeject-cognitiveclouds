@@ -1,5 +1,6 @@
 import { Avatar, Button, CircularProgress, Table, TableCell, TableRow, Typography } from '@mui/material';
 import axios from 'axios';
+import { url } from 'inspector';
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 
@@ -30,7 +31,7 @@ const Country = () => {
             {data ? <div>
                 <Button sx={{m:2}} variant='contained' onClick={() => navigate(-1)}>Home</Button>
                 <Typography sx={{ textAlign: 'center' }} variant='h4'>Country Details</Typography>
-                <Table sx={{ width: '30vw', ml: '35vw', borderRadius: '10px', mt: 5, boreder: '1px solid black', boxShadow: '8px 10px #888888' }}>
+                <Table sx={{ backgroundColor:'#E2E6F0', m:'auto', width:'25rem', height:'13rem', borderRadius: '10px', boreder: '1px solid black', boxShadow: '5px 10px #888888' }}>
                     <TableRow>
                         <TableCell>
                             <b>{country}</b>
