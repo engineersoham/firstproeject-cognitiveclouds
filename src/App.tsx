@@ -9,10 +9,11 @@ const App = () => {
 
   return (
     <div>
-      <Nav navigate={navigate}/>
+      
       <Routes>
-        <Route path='/country/:country' element={<Country/>}/>
+        <Route path='/country' element={<Country/>}/>
         <Route path='/weather/:capital' element={<Weather/>}/>
+        <Route path='/' element={<Nav navigate={navigate}/>}/>
       </Routes>
     </div>
   )

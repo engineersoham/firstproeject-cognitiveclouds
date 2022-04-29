@@ -2,11 +2,12 @@ import { Avatar, Button, CircularProgress, Table, TableCell, TableRow, Typograph
 import axios from 'axios';
 import { url } from 'inspector';
 import React, { useEffect, useState } from 'react'
+import { useLocation } from 'react-router';
 import { useNavigate, useParams } from 'react-router-dom';
 
 const Country = () => {
     const [data, setData]: any = useState<any>();
-    const { country } = useParams()
+    const country:any  = useLocation().state
     const navigate = useNavigate()
     const fetchData = async () => {
         try {
@@ -29,7 +30,7 @@ const Country = () => {
     return (
         <>
             {data ? <div>
-                <Button sx={{m:2}} variant='contained' onClick={() => navigate(-1)}>Home</Button>
+                <Button data-testid='back' sx={{m:2}} variant='contained' onClick={() => navigate(-1)}>Back</Button>
                 <Typography sx={{ textAlign: 'center' }} variant='h4'>Country Details</Typography>
                 <Table sx={{ backgroundColor:'#E2E6F0', m:'auto', width:'25rem', height:'13rem', borderRadius: '10px', boreder: '1px solid black', boxShadow: '5px 10px #888888' }}>
                     <TableRow>
